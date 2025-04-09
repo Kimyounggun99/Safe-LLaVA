@@ -51,7 +51,7 @@ playground/data
     ├── VG_100K
     └── VG_100K_2
 ```
-📥 You can download all the images from the LLaVA Google Drive Link.
+📥 You can download the images for pretraining from [this link](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain) and for finetuning from [COCO](http://images.cocodataset.org/zips/train2017.zip), [GQA](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip), [OCR-VQA](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_?usp=sharing), [TextVQA](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip), [VisualGenome](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip).
 
 #### 3. Download cleaned datasets
 To train Safe-LLaVA, you also need the cleaned datasets:
