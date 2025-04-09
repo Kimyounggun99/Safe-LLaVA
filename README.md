@@ -36,7 +36,7 @@ Download the image datasets required for visual instruction tuning:
 #### 2. Organize dataset directory
 After downloading, organize the datasets into the following directory structure:
 ```bash
-playground/data
+./YourPath/Safe-LLaVA/playground/data
 ├── LLaVA-Pretrain
 │   └── images
 ├── coco
