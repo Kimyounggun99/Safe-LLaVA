@@ -23,7 +23,7 @@ pip install flash-attn --no-build-isolation
 ```
 ### 📂 Data Preparation
 #### 1. Download image datasets
-Download the image datasets required for visual instruction tuning:
+Download the image datasets required for pretraining and visual instruction tuning. 📥 You can download the images for pretraining from [this link](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain) and for finetuning from [COCO](http://images.cocodataset.org/zips/train2017.zip), [GQA](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip), [OCR-VQA](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_?usp=sharing), [TextVQA](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip), and [VisualGenome](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip).
 ```bash
 - BLIP_LAION_CC_SBU_558K (images)
 - COCO (train2017)
@@ -51,7 +51,6 @@ After downloading, organize the datasets into the following directory structure:
     ├── VG_100K
     └── VG_100K_2
 ```
-📥 You can download the images for pretraining from [this link](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain) and for finetuning from [COCO](http://images.cocodataset.org/zips/train2017.zip), [GQA](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip), [OCR-VQA](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_?usp=sharing), [TextVQA](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip), and [VisualGenome](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip).
 
 #### 3. Download cleaned datasets
 To train Safe-LLaVA, you also need the cleaned datasets:
