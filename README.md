@@ -1,8 +1,8 @@
 ## 🌟 Safe-LLaVA: Removing Biometric Information from Vision Language Models
-This repository reproduces and extends the LLaVA project by systematically removing biometric information (e.g., gender, race, age) from the training data.
+This repository reproduces and extends the [LLaVA project](https://github.com/haotian-liu/LLaVA) by systematically removing biometric information (e.g., gender, race, age) from the training data.
 We introduce Safe-LLaVA, a privacy-conscious version of LLaVA, and propose a new evaluation protocol called BIAS (Biometric Information Awareness and Safety Benchmark).
 
-For more details on environment setup and advanced usage, please refer to the original LLaVA GitHub page.
+For more details on environment setup and advanced usage, please refer to the original [LLaVA GitHub page](https://github.com/haotian-liu/LLaVA).
 
 ### 🚀 Getting Started
 #### Clone the repository
@@ -25,6 +25,7 @@ pip install flash-attn --no-build-isolation
 #### 1. Download image datasets
 Download the image datasets required for visual instruction tuning:
 ```bash
+- BLIP_LAION_CC_SBU_558K (images)
 - COCO (train2017)
 - GQA (images)
 - OCR-VQA (images)
@@ -36,6 +37,8 @@ Download the image datasets required for visual instruction tuning:
 After downloading, organize the datasets into the following directory structure:
 ```bash
 playground/data
+├── LLaVA-Pretrain
+│   └── images
 ├── coco
 │   └── train2017
 ├── gqa
