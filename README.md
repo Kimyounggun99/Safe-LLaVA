@@ -43,6 +43,8 @@ After downloading, organize the datasets into the following directory structure:
 
 ```bash
 playground/data
+│── LLaVA-Pretrain
+│   └── images
 ├── coco
 │   └── train2017
 ├── gqa
@@ -55,7 +57,7 @@ playground/data
     ├── VG_100K
     └── VG_100K_2
 ```
-📥 You can download all the images from the [LLaVA Google Drive Link](https://github.com/haotian-liu/LLaVA).
+📥 You can download the images for pretraining from this [huggingface](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain) and for finetuning from [COCO](http://images.cocodataset.org/zips/train2017.zip), [GQA](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip), [OCR-VQA](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_?usp=sharing), and [TextVQA](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip), [VisualGenome](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip).
 
 #### 3. Download cleaned datasets
 To train Safe-LLaVA, you also need the cleaned datasets:
@@ -63,7 +65,7 @@ To train Safe-LLaVA, you also need the cleaned datasets:
 - Pretraining dataset: Safe_blip_laion_cc_sbu_558k.json
 - Visual instruction tuning dataset: Safe_llava_v1_5_mix665k.json
 ```
-📥 Download the cleaned datasets from [this link](https://github.com/haotian-liu/LLaVA)
+📥 Download the cleaned datasets from [this link](https://ucf-my.sharepoint.com/my?id=%2Fpersonal%2Fyo171134%5Fucf%5Fedu%2FDocuments%2FSafe%2DLLaVA&login_hint=yo171134%40ucf%2Eedu)
 After downloading, place the cleaned datasets under the following path:
 ```bash
 ./playground/data/
