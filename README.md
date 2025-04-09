@@ -61,7 +61,8 @@ To train Safe-LLaVA, you also need the cleaned datasets:
 ```
 📥 Download the cleaned datasets from [this link](https://ucf-my.sharepoint.com/my?id=%2Fpersonal%2Fyo171134%5Fucf%5Fedu%2FDocuments%2FSafe%2DLLaVA&login_hint=yo171134%40ucf%2Eedu). After downloading, place the cleaned datasets under the following path:
 ```bash
-./playground/data/
+./playground/data/LLaVA-Pretrain/Safe_blip_laion_cc_sbu_558k.json
+./playground/data/Safe_llava_v1_5_mix665k.json
 ```
 ### 🏋️‍♂️ Training
 Once your environment and datasets are ready, you can start training Safe-LLaVA.
