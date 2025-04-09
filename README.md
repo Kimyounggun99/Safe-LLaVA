@@ -19,8 +19,9 @@ conda activate safe-llava
 
 ### Setup environment
 
-```bash
+```
 pip install --upgrade pip
 pip install -e .
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
+```
