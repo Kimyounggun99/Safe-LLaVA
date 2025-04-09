@@ -76,4 +76,4 @@ bash ./scripts/v1_5/finetune.sh
 ### 📢 Acknowledgement
 This project builds upon the incredible work of LLaVA. We deeply appreciate the original authors for making their code and models publicly available.
 
-TODO: 🏋️‍♂️ Testing
+### TODO: 🏋️‍♂️ Testing
