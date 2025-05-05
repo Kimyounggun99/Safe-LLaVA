@@ -73,7 +73,7 @@ After downloading, please make data structure like following:
 ./playground/data/eval/PRISM
 ├── PRISM_refusal_soft.jsonl
 ├── PRISM_refusal_hard.jsonl
-├── PRISM_implicit_leakage.jsonl
+└── PRISM_implicit_leakage.jsonl
 ```
 ```bash
 ./playground/data/eval/PRISM/biometric_images
