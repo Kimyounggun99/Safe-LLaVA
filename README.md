@@ -145,6 +145,7 @@ bash ./scripts/v1_5/finetune.sh
 ### 🏋️‍♂️ Testing
 
 #### 1. Test model on PRISM benchmark
+
 For refusal task, run the following command:
 ```bash
 bash ./scripts/v1_5/eval/PRISM_refusal.sh
@@ -154,6 +155,8 @@ For implicit leakage task, run the following command:
 ```bash
 bash ./scripts/v1_5/eval/PRISM_implicit_leakage.sh
 ```
+
+Note that you need to fill out your GPT API key in the `PRISM_refusal.sh` and `PRISM_implicit_leakage.sh` files.
 
 #### 2. Test model on general benchmarks
 For model testing on general benchmarks, Please visit the [github](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) provided by LLaVA authors.
