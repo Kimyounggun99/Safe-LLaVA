@@ -135,7 +135,11 @@ After pretraining, proceed to the visual instruction tuning stage:
 ```bash
 bash ./scripts/v1_5/finetune.sh
 ```
+
+### 🏋️‍♂️ Testing
+
+
 ### 📢 Acknowledgement
 This project builds upon the incredible work of [LLaVA](https://github.com/haotian-liu/LLaVA). We deeply appreciate the original authors for making their code and models publicly available.
 
-### TODO: 🏋️‍♂️ Testing
+
