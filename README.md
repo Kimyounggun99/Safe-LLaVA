@@ -53,7 +53,7 @@ After downloading, organize the datasets into the following directory structure:
 ```
 
 #### 3. Download Safe-LLaVA datasets
-To train Safe-LLaVA, you also need the cleaned datasets:
+To train LLaVA-7B model on our Safe-LLaVA dataset, you also need the cleaned datasets:
 ```bash
 - Pretraining dataset: Safe_blip_laion_cc_sbu_558k.json
 - Visual instruction tuning dataset: Safe_llava_v1_5_mix665k.json
