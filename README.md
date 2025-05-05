@@ -149,10 +149,16 @@ For refusal task, run the following command:
 ```bash
 bash ./scripts/v1_5/eval/PRISM_refusal.sh
 ```
+
 For implicit leakage task, run the following command:
 ```bash
 bash ./scripts/v1_5/eval/PRISM_implicit_leakage.sh
 ```
+
+#### 2. Test model on general benchmarks
+For model testing on general benchmarks, Please visit the [github](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) provided by LLaVA authors.
+
+
 ### 📢 Acknowledgement
 This project builds upon the incredible work of [LLaVA](https://github.com/haotian-liu/LLaVA). We deeply appreciate the original authors for making their code and models publicly available.
 
