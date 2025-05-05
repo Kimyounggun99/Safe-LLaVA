@@ -58,7 +58,7 @@ To train Safe-LLaVA, you also need the cleaned datasets:
 - Pretraining dataset: Safe_blip_laion_cc_sbu_558k.json
 - Visual instruction tuning dataset: Safe_llava_v1_5_mix665k.json
 ```
-📥 Download the cleaned datasets from [this link](https://ucf-my.sharepoint.com/my?id=%2Fpersonal%2Fyo171134%5Fucf%5Fedu%2FDocuments%2FSafe%2DLLaVA&login_hint=yo171134%40ucf%2Eedu). After downloading, place the cleaned datasets under the following path:
+📥 Download our Safe-LLaVA dataset annotation from [our huggingface](https://huggingface.co/datasets/kyh9191/Safe-LLaVA/blob/main/README.md). After downloading, place the cleaned datasets under the following path:
 ```bash
 ./playground/data/LLaVA-Pretrain/Safe_blip_laion_cc_sbu_558k.json
 ./playground/data/Safe_llava_v1_5_mix665k.json
