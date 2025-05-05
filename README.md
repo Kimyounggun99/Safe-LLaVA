@@ -52,7 +52,7 @@ After downloading, organize the datasets into the following directory structure:
     └── VG_100K_2
 ```
 
-#### 3. Download cleaned datasets
+#### 3. Download Safe-LLaVA datasets
 To train Safe-LLaVA, you also need the cleaned datasets:
 ```bash
 - Pretraining dataset: Safe_blip_laion_cc_sbu_558k.json
