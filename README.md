@@ -70,6 +70,12 @@ To test models on our PRISM benchmark, you need to download images from [our hug
 After downloading, please make data structure like following:
 
 ```bash
+./playground/data/eval/PRISM
+├── PRISM_refusal_soft.jsonl
+├── PRISM_refusal_hard.jsonl
+├── PRISM_implicit_leakage.jsonl
+```
+```bash
 ./playground/data/eval/PRISM/biometric_images
 ├── Weight
 │   ├── very_thin_person_standing_photo
