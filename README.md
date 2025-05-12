@@ -1,6 +1,6 @@
 ## 🌟 Safe-LLaVA: A Privacy-Preserving Vision-Language Dataset and Benchmark for Biometric Safety
 This repository reproduces and extends the [LLaVA project](https://github.com/haotian-liu/LLaVA) by systematically removing biometric information (e.g., gender, race, age) from the training data.
-We introduce Safe-LLaVA, a privacy-conscious version of LLaVA, and propose a new evaluation protocol called BIAS (Biometric Information Awareness and Safety Benchmark).
+We introduce Safe-LLaVA, a privacy-conscious version of LLaVA, and propose a new evaluation protocol called PRISM (Privacy-aware Evaluation of Responses in Sensitive Modalities).
 
 For more details on environment setup and advanced usage, please refer to the original [LLaVA GitHub page](https://github.com/haotian-liu/LLaVA).
 
