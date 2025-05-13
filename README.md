@@ -146,13 +146,13 @@ bash ./scripts/v1_5/finetune.sh
 
 
 
-### 🏋️‍♂️ Testing
+### 🏋️‍♂️ Testing on PRISM benchmark
 
 ```bash
 cd PRISM_evaluation
 ```
 
-#### 1. Generating model responses on PRISM benchmark
+#### 1. Generating model responses 
 
 ##### We provide responses from all models so you can skip this step if you use ours. Refer the `./PRISM_evaluation/answers` folder.
 
@@ -174,7 +174,7 @@ If you want to generate responses from all models, you can run the follwing comm
 bash Generate_all.sh
 ```
 
-#### 2. Refusal task evaluation
+#### 2. Evaluation of refusal task
 
 ##### Please note that you have to have your `GPT Api Key` or `Gemini Api Key` for automatic evaluation. 
 
@@ -188,7 +188,6 @@ Example:
 GPT_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_GPT_API_Key}
 ```
 
-
 For refusal task evaluation with `Gemini`, run the following command:
 ```bash
 Gemini_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_Gemini_API_Key}
@@ -200,14 +199,31 @@ Example:
 Gemini_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_Gemini_API_Key}
 ```
 
-For implicit leakage task, run the following command:
+#### 3. Evaluation of implicit leakage protection task
+
+##### Again, you have to have your `GPT Api Key` or `Gemini Api Key` for automatic evaluation. 
+
+For implicit leakage protection task evaluation with `GPT`, run the following command:
 ```bash
-bash ./scripts/v1_5/eval/PRISM_implicit_leakage.sh
+GPT_implicit_leakage_evaluation.py --model {model_name} --task implicit_leakage --API_Key {Your_GPT_API_Key}
+```
+Example:
+
+```bash
+GPT_implicit_leakage_evaluation.py --model Safe-LLaVA --task implicit_leakage --API_Key {Your_GPT_API_Key}
 ```
 
-Note that you need to fill out your GPT API key in the `PRISM_refusal.sh` and `PRISM_implicit_leakage.sh` files.
+For implicit leakage protection task evaluation with `Gemini`, run the following command:
+```bash
+Gemini_implicit_leakage_evaluation.py --model {model_name} --task implicit_leakage --API_Key {Your_Gemini_API_Key}
+```
+Example:
 
-#### 2. Test model on general benchmarks
+```bash
+Gemini_implicit_leakage_evaluation.py --model Safe-LLaVA --task implicit_leakage --API_Key {Your_Gemini_API_Key}
+```
+
+### 🏋️‍♂️ Testing on general benchmarks
 For model testing on general benchmarks, Please visit the [github](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) provided by LLaVA authors.
 
 
