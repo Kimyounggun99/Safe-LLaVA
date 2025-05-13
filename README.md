@@ -180,23 +180,23 @@ bash Generate_all.sh
 
 For refusal task evaluation with `GPT`, run the following command:
 ```bash
-GPT_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_GPT_API_Key}
+python GPT_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_GPT_API_Key}
 ```
 Example:
 
 ```bash
-GPT_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_GPT_API_Key}
+python GPT_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_GPT_API_Key}
 ```
 
 For refusal task evaluation with `Gemini`, run the following command:
 ```bash
-Gemini_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_Gemini_API_Key}
+python Gemini_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_Gemini_API_Key}
 ```
 
 Example:
 
 ```bash
-Gemini_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_Gemini_API_Key}
+python Gemini_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_Gemini_API_Key}
 ```
 
 #### 3. Evaluation of implicit leakage protection task
@@ -205,22 +205,22 @@ Gemini_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Y
 
 For implicit leakage protection task evaluation with `GPT`, run the following command:
 ```bash
-GPT_implicit_leakage_evaluation.py --model {model_name} --task implicit_leakage --API_Key {Your_GPT_API_Key}
+python GPT_implicit_leakage_evaluation.py --model {model_name} --task implicit_leakage --API_Key {Your_GPT_API_Key}
 ```
 Example:
 
 ```bash
-GPT_implicit_leakage_evaluation.py --model Safe-LLaVA --task implicit_leakage --API_Key {Your_GPT_API_Key}
+python GPT_implicit_leakage_evaluation.py --model Safe-LLaVA --task implicit_leakage --API_Key {Your_GPT_API_Key}
 ```
 
 For implicit leakage protection task evaluation with `Gemini`, run the following command:
 ```bash
-Gemini_implicit_leakage_evaluation.py --model {model_name} --task implicit_leakage --API_Key {Your_Gemini_API_Key}
+python Gemini_implicit_leakage_evaluation.py --model {model_name} --task implicit_leakage --API_Key {Your_Gemini_API_Key}
 ```
 Example:
 
 ```bash
-Gemini_implicit_leakage_evaluation.py --model Safe-LLaVA --task implicit_leakage --API_Key {Your_Gemini_API_Key}
+python Gemini_implicit_leakage_evaluation.py --model Safe-LLaVA --task implicit_leakage --API_Key {Your_Gemini_API_Key}
 ```
 
 ### 🏋️‍♂️ Testing on general benchmarks
