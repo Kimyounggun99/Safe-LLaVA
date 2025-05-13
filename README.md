@@ -166,7 +166,7 @@ Example
 bash Safe-LLaVA.sh
 ```
 
-To generate responses from all models, conduct follwing command:
+If you want to generate responses from all models, you can conduct follwing command:
 
 ```bash
 bash Generate_all.sh
