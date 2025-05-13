@@ -154,7 +154,7 @@ cd PRISM_evaluation
 
 #### 1. Generating model responses on PRISM benchmark
 
-##### We provide responses from all models so you can skip this step if you use ours.
+##### We provide responses from all models so you can skip this step if you use ours. Refer the `./PRISM_evaluation/answers` folder.
 
 Generate responses from models and save their responses.
 
