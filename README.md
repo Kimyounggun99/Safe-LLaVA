@@ -148,7 +148,31 @@ bash ./scripts/v1_5/finetune.sh
 
 ### 🏋️‍♂️ Testing
 
-#### 1. Test model on PRISM benchmark
+```bash
+cd PRISM_evaluation
+```
+
+#### 1. Generating model response
+
+Generate responses from models and save their responses.
+
+```bash
+bash model_name{Safe-LLaVA/LLaVA/LLaVA-Onevision/LLaVA-Next/Qwen25/InternVLC2_5/InternVLC3/Gemma}.sh
+```
+
+Example
+
+```bash
+bash Safe-LLaVA.sh
+```
+
+To generate responses from all models, conduct follwing command:
+
+```bash
+bash Generate_all.sh
+```
+
+#### 2. Test model on PRISM benchmark
 
 For refusal task, run the following command:
 ```bash
