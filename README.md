@@ -176,26 +176,28 @@ bash Generate_all.sh
 
 #### 2. Refusal task evaluation
 
-For refusal task with GPT, run the following command:
+##### Please note that you have to have your `GPT Api Key` or `Gemini Api Key` for automatic evaluation. 
+
+For refusal task evaluation with `GPT`, run the following command:
 ```bash
 GPT_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_GPT_API_Key}
 ```
+Example:
+
+```bash
+GPT_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_GPT_API_Key}
+```
+
+
+For refusal task evaluation with `Gemini`, run the following command:
+```bash
+Gemini_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_Gemini_API_Key}
+```
 
 Example:
 
 ```bash
-GPT_refusal_evaluation.py --model {Safe-LLaVA} --task refusal_soft --API_Key {Your_GPT_API_Key}
-```
-
-For refusal task with Gemini, run the following command:
-```bash
-Gemini_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_GPT_API_Key}
-```
-
-Example:
-
-```bash
-Gemini_refusal_evaluation.py --model {Safe-LLaVA} --task refusal_soft --API_Key {Your_GPT_API_Key}
+Gemini_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_Gemini_API_Key}
 ```
 
 For implicit leakage task, run the following command:
