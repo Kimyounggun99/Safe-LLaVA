@@ -152,7 +152,9 @@ bash ./scripts/v1_5/finetune.sh
 cd PRISM_evaluation
 ```
 
-#### 1. Generating model response
+#### 1. Generating model responses on PRISM benchmark
+
+##### We provide responses from all models so you can skip this step if you use ours.
 
 Generate responses from models and save their responses.
 
@@ -160,23 +162,40 @@ Generate responses from models and save their responses.
 bash model_name{Safe-LLaVA/LLaVA/LLaVA-Onevision/LLaVA-Next/Qwen25/InternVLC2_5/InternVLC3/Gemma}.sh
 ```
 
-Example
+Example:
 
 ```bash
 bash Safe-LLaVA.sh
 ```
 
-If you want to generate responses from all models, you can conduct follwing command:
+If you want to generate responses from all models, you can run the follwing command:
 
 ```bash
 bash Generate_all.sh
 ```
 
-#### 2. Test model on PRISM benchmark
+#### 2. Refusal task evaluation
 
-For refusal task, run the following command:
+For refusal task with GPT, run the following command:
 ```bash
-bash ./scripts/v1_5/eval/PRISM_refusal.sh
+GPT_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_GPT_API_Key}
+```
+
+Example:
+
+```bash
+GPT_refusal_evaluation.py --model {Safe-LLaVA} --task refusal_soft --API_Key {Your_GPT_API_Key}
+```
+
+For refusal task with Gemini, run the following command:
+```bash
+Gemini_refusal_evaluation.py --model {model_name} --task {refusal_soft/refusal_hard} --API_Key {Your_GPT_API_Key}
+```
+
+Example:
+
+```bash
+Gemini_refusal_evaluation.py --model {Safe-LLaVA} --task refusal_soft --API_Key {Your_GPT_API_Key}
 ```
 
 For implicit leakage task, run the following command:
