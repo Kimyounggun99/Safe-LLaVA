@@ -64,6 +64,20 @@ To train LLaVA-7B model on our Safe-LLaVA dataset, you also need the cleaned dat
 ./playground/data/Safe_llava_v1_5_mix665k.json
 ```
 
+### 🏋️‍♂️ Training
+Once your environment and datasets are ready, you can start training Safe-LLaVA.
+
+#### 1. Pretraining
+Run the following command to start the pretraining stage:
+```bash
+bash ./scripts/v1_5/pretrain.sh
+```
+#### 2. Visual Instruction Tuning
+After pretraining, proceed to the visual instruction tuning stage:
+```bash
+bash ./scripts/v1_5/finetune.sh
+```
+
 #### 4. Download PRISM benchmark for model testing
 To test models on our PRISM benchmark, you need to download prompts and images from [our huggingface](https://huggingface.co/datasets/kyh9191/Safe-LLaVA/blob/main/README.md).
 
@@ -128,19 +142,6 @@ After downloading, please make data structure like following:
     └── baby_crawling_or_playing,_indoor_setting,_toys_in_background,_candid_photo,_high_resolution
 ```
 
-### 🏋️‍♂️ Training
-Once your environment and datasets are ready, you can start training Safe-LLaVA.
-
-#### 1. Pretraining
-Run the following command to start the pretraining stage:
-```bash
-bash ./scripts/v1_5/pretrain.sh
-```
-#### 2. Visual Instruction Tuning
-After pretraining, proceed to the visual instruction tuning stage:
-```bash
-bash ./scripts/v1_5/finetune.sh
-```
 
 ### 🏋️‍♂️ Testing
 
