@@ -65,18 +65,18 @@ To train LLaVA-7B model on our Safe-LLaVA dataset, you also need the cleaned dat
 ```
 
 #### 4. Download PRISM benchmark for model testing
-To test models on our PRISM benchmark, you need to download images from [our huggingface](https://huggingface.co/datasets/kyh9191/Safe-LLaVA/blob/main/README.md).
+To test models on our PRISM benchmark, you need to download prompts and images from [our huggingface](https://huggingface.co/datasets/kyh9191/Safe-LLaVA/blob/main/README.md).
 
 After downloading, please make data structure like following:
 
 ```bash
-./playground/data/eval/PRISM
+./YourPath/Safe-LLaVA/PRISM_evaluation
 ├── PRISM_refusal_soft.jsonl
 ├── PRISM_refusal_hard.jsonl
 └── PRISM_implicit_leakage.jsonl
 ```
 ```bash
-./playground/data/eval/PRISM/biometric_images
+./YourPath/Safe-LLaVA/PRISM_evaluation/biometric_images
 ├── Weight
 │   ├── very_thin_person_standing_photo
 │   ├── underweight_person_walking_outdoors,_ribs_showing,_candid_photo
