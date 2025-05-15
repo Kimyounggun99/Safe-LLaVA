@@ -117,7 +117,7 @@ elif args.model == "LLaVA-Next":
 elif args.model == "LLaVA-Onevision":
     model = "llava-hf/llava-onevision-qwen2-7b-ov-hf"
 elif args.model == "LLaVA-Onevision-0_5B":
-    model = "llava-hf/llava-onevision-qwen2-0.5b-ov-hf"
+    model = "lmms-lab/llava-onevision-qwen2-0.5b-si"
 elif args.model == 'Gemma':
     model = "google/gemma-3-4b-it"
 elif args.model == "Qwen25":
@@ -144,7 +144,7 @@ elif args.model == "LLaVA-Next":
     processor = LlavaNextProcessor.from_pretrained(model)
     llm = LlavaNextForConditionalGeneration.from_pretrained(model, torch_dtype=torch.float16, low_cpu_mem_usage=True) 
     llm.to("cuda")
-elif args.model == "LLaVA-Onevision" or args.model == "LLaVA-Onevision-0_5B":
+elif args.model == "LLaVA-Onevision":
     llm = LlavaOnevisionForConditionalGeneration.from_pretrained(
         model, 
         torch_dtype=torch.float16, 
@@ -177,7 +177,7 @@ elif args.model=="InternVLC3" or args.model=="InternVLC2_5":
     tokenizer = AutoTokenizer.from_pretrained(model, trust_remote_code=True, use_fast=False)
     generation_config = dict(max_new_tokens=128, do_sample=True)
     
-elif args.model =="Safe-LLaVA-0_5B":
+elif args.model =="Safe-LLaVA-0_5B" or args.model == "LLaVA-Onevision-0_5B":
     model_name = "llava_qwen"
     conv_template = "qwen_1_5"
 
@@ -217,7 +217,7 @@ with open(input_path, "r") as f:
             continue
 
         # 모델 예측
-        if args.model=="LLaVA" or args.model=="LLaVA-Next" or args.model =="LLaVA-Onevision" or args.model == "LLaVA-Onevision-0_5B":
+        if args.model=="LLaVA" or args.model=="LLaVA-Next" or args.model =="LLaVA-Onevision" :
             conversation = [
                 {
                 
@@ -289,8 +289,8 @@ with open(input_path, "r") as f:
             pixel_values = load_image(image_path, max_num=12).to(torch.bfloat16).cuda()
             answer = llm.chat(tokenizer, pixel_values, question, generation_config)
        
-        elif args.model=='Safe-LLaVA-0_5B':
-            
+        elif args.model=='Safe-LLaVA-0_5B' or args.model == "LLaVA-Onevision-0_5B":
+        
             image_tensor = process_images([image], processor, llm.config)
             image_tensor = [_image.to(dtype=torch.float16, device=device) for _image in image_tensor]
             question = f'<image>\n{prompt}'
@@ -325,7 +325,8 @@ with open(input_path, "r") as f:
                 answer = answer[0]
             elif args.model == "Safe-LLaVA-0_5B":
                 answer= answer.split("Assistant:", 1)[-1].strip().split("\n",1)[0].strip()
-
+        print(f"Filtered Answer: {answer}")
+        
         outputs.append({
             "question_id": item["question_id"],
             "prompt": prompt,
