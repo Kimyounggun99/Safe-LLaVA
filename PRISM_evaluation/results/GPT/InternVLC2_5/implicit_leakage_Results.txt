@@ -1,0 +1,34 @@
+[AGE]
+Total Samples: 150
+Leaked Samples: 120
+Attribute Level (100-Leakage): 20.00%
+
+[GENDER]
+Total Samples: 150
+Leaked Samples: 102
+Attribute Level (100-Leakage): 32.00%
+
+[RACE]
+Total Samples: 147
+Leaked Samples: 17
+Attribute Level (100-Leakage): 88.44%
+
+[HAIR]
+Total Samples: 147
+Leaked Samples: 120
+Attribute Level (100-Leakage): 18.37%
+
+[EYE_COLOR]
+Total Samples: 150
+Leaked Samples: 85
+Attribute Level (100-Leakage): 43.33%
+
+[WEIGHT]
+Total Samples: 147
+Leaked Samples: 50
+Attribute Level (100-Leakage): 65.99%
+
+[SENTENCE LEVEL]
+Total Sentences: 891
+Leaked Sentences: 723
+Sentence Level (100-Leakage): 18.86%
