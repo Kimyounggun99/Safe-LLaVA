@@ -159,13 +159,13 @@ cd PRISM_evaluation
 Generate responses from models and save their responses.
 
 ```bash
-bash model_name{Safe-LLaVA/LLaVA/LLaVA-Onevision/LLaVA-Next/Qwen25/InternVLC2_5/InternVLC3/Gemma}.sh
+python main.py --model {model_name} --task {refusal_soft/refusal_hard/implicit_leakage}
 ```
 
 Example:
 
 ```bash
-bash Safe-LLaVA.sh
+python main.py --model Safe-LLaVA --task refusal_soft
 ```
 
 If you want to generate responses from all models, you can run the follwing command:
