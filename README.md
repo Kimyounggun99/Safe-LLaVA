@@ -128,7 +128,15 @@ After downloading, please make data structure like following:
     └── baby_crawling_or_playing,_indoor_setting,_toys_in_background,_candid_photo,_high_resolution
 ```
 
+### Model Zoo
 
+We provide checkpoints of the Safe-LLaVA-0.5B model. To use the checkpoints, visit [our huggingface](https://huggingface.co/datasets/kyh9191/Safe-LLaVA/blob/main/README.md) and make folder structure like following:
+
+```bash
+./YourPath/Safe-LLaVA/PRISM_evaluation/checkpoints
+├── Safe-LLaVA-0_5B
+└── safe-siglip-pretrain-0_5B
+```
 
 ### 🏋️‍♂️ Training
 Once your environment and datasets are ready, you can start training Safe-LLaVA.
