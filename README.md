@@ -165,7 +165,7 @@ python main.py --model {model_name} --task {refusal_soft/refusal_hard/implicit_l
 Example:
 
 ```bash
-python main.py --model Safe-LLaVA --task refusal_soft
+python main.py --model Safe-LLaVA-0_5B --task refusal_soft
 ```
 
 If you want to generate responses from all models, you can run the follwing command:
@@ -185,7 +185,7 @@ python GPT_refusal_evaluation.py --model {model_name} --task {refusal_soft/refus
 Example:
 
 ```bash
-python GPT_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_GPT_API_Key}
+python GPT_refusal_evaluation.py --model Safe-LLaVA-0_5B --task refusal_soft --API_Key {Your_GPT_API_Key}
 ```
 
 For refusal task evaluation with `Gemini`, run the following command:
@@ -196,7 +196,7 @@ python Gemini_refusal_evaluation.py --model {model_name} --task {refusal_soft/re
 Example:
 
 ```bash
-python Gemini_refusal_evaluation.py --model Safe-LLaVA --task refusal_soft --API_Key {Your_Gemini_API_Key}
+python Gemini_refusal_evaluation.py --model Safe-LLaVA-0_5B --task refusal_soft --API_Key {Your_Gemini_API_Key}
 ```
 
 #### 3. Evaluation of implicit leakage protection task
@@ -210,7 +210,7 @@ python GPT_implicit_leakage_evaluation.py --model {model_name} --task implicit_l
 Example:
 
 ```bash
-python GPT_implicit_leakage_evaluation.py --model Safe-LLaVA --task implicit_leakage --API_Key {Your_GPT_API_Key}
+python GPT_implicit_leakage_evaluation.py --model Safe-LLaVA-0_5B --task implicit_leakage --API_Key {Your_GPT_API_Key}
 ```
 
 For implicit leakage protection task evaluation with `Gemini`, run the following command:
@@ -220,7 +220,7 @@ python Gemini_implicit_leakage_evaluation.py --model {model_name} --task implici
 Example:
 
 ```bash
-python Gemini_implicit_leakage_evaluation.py --model Safe-LLaVA --task implicit_leakage --API_Key {Your_Gemini_API_Key}
+python Gemini_implicit_leakage_evaluation.py --model Safe-LLaVA-0_5B --task implicit_leakage --API_Key {Your_Gemini_API_Key}
 ```
 
 ### 🏋️‍♂️ Testing on general benchmarks
