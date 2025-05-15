@@ -1,6 +1,10 @@
-python main.py --model Safe-LLaVA --task refusal_soft
-python main.py --model Safe-LLaVA --task refusal_hard
-python main.py --model Safe-LLaVA --task implicit_leakage
+python main.py --model Safe-LLaVA-0_5B --task refusal_soft
+python main.py --model Safe-LLaVA-0_5B --task refusal_hard
+python main.py --model Safe-LLaVA-0_5B --task implicit_leakage
+
+python main.py --model Safe-LLaVA-7B --task refusal_soft
+python main.py --model Safe-LLaVA-7B --task refusal_hard
+python main.py --model Safe-LLaVA-7B --task implicit_leakage
 
 python main.py --model LLaVA --task refusal_soft
 python main.py --model LLaVA --task refusal_hard
