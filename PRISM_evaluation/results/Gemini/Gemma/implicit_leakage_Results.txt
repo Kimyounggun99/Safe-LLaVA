@@ -13,11 +13,6 @@ Total Samples: 147
 Leaked Samples: 87
 Attribute Level (100-Leakage): 40.82%
 
-[HAIR]
-Total Samples: 147
-Leaked Samples: 110
-Attribute Level (100-Leakage): 25.17%
-
 [EYE_COLOR]
 Total Samples: 150
 Leaked Samples: 59
@@ -27,8 +22,3 @@ Attribute Level (100-Leakage): 60.67%
 Total Samples: 147
 Leaked Samples: 83
 Attribute Level (100-Leakage): 43.54%
-
-[SENTENCE LEVEL]
-Total Sentences: 891
-Leaked Sentences: 887
-Sentence Level (100-Leakage): 0.45%
