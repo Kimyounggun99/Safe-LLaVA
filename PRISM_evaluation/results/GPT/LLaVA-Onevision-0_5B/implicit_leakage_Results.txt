@@ -22,8 +22,3 @@ Attribute Level (100-Leakage): 46.00%
 Total Samples: 147
 Leaked Samples: 36
 Attribute Level (100-Leakage): 75.51%
-
-[SENTENCE LEVEL]
-Total Sentences: 891
-Leaked Sentences: 746
-Sentence Level (100-Leakage): 16.27%
