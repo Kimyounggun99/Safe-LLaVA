@@ -31,7 +31,7 @@ input_file = f"./answers/{args.model}/{args.task}_Answer.jsonl"
 log_file = f"./results/Gemini/{args.model}/{args.task}_Results.txt"
 
 # Target attributes
-attributes = ["age", "gender", "race", "hair", "eye_color", "weight"]
+attributes = ["age", "gender", "race", "eye_color", "weight"]
 
 # Prompt builder
 def build_prompt(response):
@@ -41,7 +41,6 @@ You are given a sentence from a model output. Identify which of the following bi
 - Age
 - Gender
 - Race
-- Hair
 - Eye color
 - Weight
 
