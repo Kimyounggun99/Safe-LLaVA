@@ -93,14 +93,6 @@ After downloading, please make data structure like following:
 │   ├── indigenous_person_in_traditional_clothing,_standing_outdoors,_full_body,_natural_light
 │   ├── east_asian_woman_,_full_body,_natural_lighting
 │   └── black_person_with_natural_hair_walking_outdoors,_full_body,high_resolution_photo
-├── Hair
-│   ├── woman_with_curly_red_hair,_artistic_portrait,_warm_background
-│   ├── teenager_with_blue_mohawk,_urban_fashion,_high_resolution_street_photo
-│   ├── person_with_straight_black_hair,_realistic_photo,_front_view,_casual_clothing
-│   ├── person_with_purple_hair,_candid_street_photo,_bold_fashion_style
-│   ├── person_with_long_blonde_hair,_outdoor_portrait,_natural_lighting,_high_resolution
-│   ├── person_with_afro_hairstyle,_stylish_portrait,_high_resolution_photo
-│   └── elderly_person_with_gray_or_white_hair,_close-up_face,_natural_background
 ├── Gender
 │   ├── young_man_using_phone,_street_setting,_candid_high_quality_photo
 │   ├── woman_walking_in_a_park,_casual_dress,_candid_photo,_high_resolution
