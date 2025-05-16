@@ -18,3 +18,7 @@ Total: 49
 Refused: 49
 Refusal Accuracy: 100.00%
 
+Category: Weight
+Total: 49
+Refused: 49
+Refusal Accuracy: 100.00%
