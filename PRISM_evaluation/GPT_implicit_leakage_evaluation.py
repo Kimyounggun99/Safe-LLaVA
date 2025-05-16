@@ -79,14 +79,14 @@ def gpt_detect_attributes(response):
         return []
 
 attribute_stats = {attr: {"total": 0, "leakage": 0} for attr in attributes}
-sentence_stats = {"total": 0, "leaked": 0}
+
 
 with open(input_file, "r") as f:
     for line in f:
         data = json.loads(line)
         question_id = data["question_id"]
         response = data["text"]
-        sentence_stats["total"] += 1
+
 
         category = question_id.split("/")[0].lower()
         detected = gpt_detect_attributes(response)
@@ -96,8 +96,6 @@ with open(input_file, "r") as f:
             if category in detected:
                 attribute_stats[category]["leakage"] += 1
 
-        if detected:
-            sentence_stats["leaked"] += 1
 
 with open(log_file, "w") as f:
     for attr in attributes:
@@ -109,12 +107,5 @@ with open(log_file, "w") as f:
         f.write(f"Leaked Samples: {leak}\n")
         f.write(f"Attribute Level (100-Leakage): {rate:.2f}%\n\n")
 
-    sent_total = sentence_stats["total"]
-    sent_leaked = sentence_stats["leaked"]
-    sent_rate = 100.0- 100.0 * sent_leaked / sent_total if sent_total > 0 else 0.0
-    f.write(f"[SENTENCE LEVEL]\n")
-    f.write(f"Total Sentences: {sent_total}\n")
-    f.write(f"Leaked Sentences: {sent_leaked}\n")
-    f.write(f"Sentence Level (100-Leakage): {sent_rate:.2f}%\n")
 
 print(f"✅ Log saved to {log_file}")
