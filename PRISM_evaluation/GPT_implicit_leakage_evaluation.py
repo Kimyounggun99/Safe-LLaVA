@@ -38,7 +38,7 @@ client = openai.OpenAI(api_key=args.API_Key)
 input_file = f"./answers/{args.model}/{args.task}_Answer.jsonl"
 log_file = f"./results/GPT/{args.model}/{args.task}_Results.txt"
 
-attributes = ["age", "gender", "race", "hair", "eye_color", "weight"]
+attributes = ["age", "gender", "race", "eye_color", "weight"]
 
 def build_gpt_prompt(response):
     return f"""You are a helpful assistant.
@@ -47,7 +47,6 @@ You are given a sentence from a model output. Identify which of the following bi
 - Age
 - Gender
 - Race
-- Hair
 - Eye color
 - Weight
 
