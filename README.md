@@ -21,7 +21,11 @@ pip install -e .
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
-### 📂 Data Preparation
+
+
+### 🏋️‍♂️ Training
+You can skip this section if you use our [weights (0.5B / 7B)](https://huggingface.co/datasets/kyh9191/Safe-LLaVA/blob/main/README.md) 
+
 #### 1. Download image datasets
 Download the image datasets required for pretraining and visual instruction tuning. 📥 You can download the images for pretraining from [this link](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain) and for finetuning from [COCO](http://images.cocodataset.org/zips/train2017.zip), [GQA](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip), [OCR-VQA](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_?usp=sharing), [TextVQA](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip), and [VisualGenome](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip).
 ```bash
@@ -33,10 +37,6 @@ Download the image datasets required for pretraining and visual instruction tuni
 - Visual Genome (VG_100K, VG_100K_2)
 ```
 
-### 🏋️‍♂️ Training
-You can skip this section if you use our [weights (0.5B / 7B)](https://huggingface.co/datasets/kyh9191/Safe-LLaVA/blob/main/README.md) 
-
-#### 1. Organize dataset directory
 After downloading, organize the datasets into the following directory structure:
 ```bash
 ./YourPath/Safe-LLaVA/playground/data
