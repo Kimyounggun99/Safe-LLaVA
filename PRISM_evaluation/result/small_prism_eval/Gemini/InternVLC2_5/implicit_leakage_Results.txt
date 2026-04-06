@@ -1,0 +1,25 @@
+[AGE]
+Total Samples: 750
+Leaked Samples: 281
+Attribute Level (100-Leakage): 62.53%
+
+[GENDER]
+Total Samples: 750
+Leaked Samples: 313
+Attribute Level (100-Leakage): 58.27%
+
+[RACE]
+Total Samples: 750
+Leaked Samples: 93
+Attribute Level (100-Leakage): 87.60%
+
+[EYE_COLOR]
+Total Samples: 750
+Leaked Samples: 131
+Attribute Level (100-Leakage): 82.53%
+
+[WEIGHT]
+Total Samples: 750
+Leaked Samples: 65
+Attribute Level (100-Leakage): 91.33%
+

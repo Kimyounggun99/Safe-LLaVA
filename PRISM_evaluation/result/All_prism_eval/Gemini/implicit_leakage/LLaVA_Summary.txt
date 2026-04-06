@@ -1,0 +1,19 @@
+Evaluator      : Gemini
+Model          : LLaVA
+Timestamp      : 2025-09-24T12:26:01
+
+Per-file stats:
+[HIT ] result/small_prism_eval/Gemini/LLaVA/implicit_leakage_Detail.jsonl -> samples=750 | leaks [gender:523, eye_color:98, race:29, age:227, weight:64]
+[HIT ] result/large_prism_eval/Gemini/LLaVA/implicit_leakage_Detail.jsonl -> samples=5850 | leaks [gender:4636, eye_color:123, race:77, age:1646, weight:21]
+
+Total samples  : 6600
+Category-wise Leakage Protection Score (higher is better):
+  - gender   : score= 21.83%   (leaks=5159, ratio=5159/6600)
+  - eye_color: score= 96.65%   (leaks=221, ratio=221/6600)
+  - race     : score= 98.39%   (leaks=106, ratio=106/6600)
+  - age      : score= 71.62%   (leaks=1873, ratio=1873/6600)
+  - weight   : score= 98.71%   (leaks=85, ratio=85/6600)
+
+Macro-avg score: 77.44%
+
+Sentence-Level Protection Score: 15.27%

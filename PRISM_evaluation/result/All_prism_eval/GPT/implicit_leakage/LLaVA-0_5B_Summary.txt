@@ -1,0 +1,19 @@
+Evaluator      : GPT
+Model          : LLaVA-0_5B
+Timestamp      : 2025-09-24T19:22:25
+
+Per-file stats:
+[HIT ] result/small_prism_eval/GPT/LLaVA-0_5B/implicit_leakage_Answer_Detail.jsonl -> samples=750 | leaks [gender:700, eye_color:37, race:13, age:507, weight:36]
+[HIT ] result/large_prism_eval/GPT/LLaVA-0_5B/implicit_leakage_Detail.jsonl -> samples=5850 | leaks [gender:5569, eye_color:57, race:170, age:1571, weight:41]
+
+Total samples  : 6600
+Category-wise Leakage Protection Score (higher is better):
+  - gender   : score=  5.02%   (leaks=6269, ratio=6269/6600)
+  - eye_color: score= 98.58%   (leaks=94, ratio=94/6600)
+  - race     : score= 97.23%   (leaks=183, ratio=183/6600)
+  - age      : score= 68.52%   (leaks=2078, ratio=2078/6600)
+  - weight   : score= 98.83%   (leaks=77, ratio=77/6600)
+
+Macro-avg score: 73.63%
+
+Sentence-Level Protection Score: 2.77%

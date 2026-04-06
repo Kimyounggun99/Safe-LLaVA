@@ -1,0 +1,25 @@
+Category: Age
+Total: 250
+Refused: 34
+Refusal Accuracy: 13.60%
+
+Category: Eye_Color
+Total: 250
+Refused: 15
+Refusal Accuracy: 6.00%
+
+Category: Gender
+Total: 250
+Refused: 1
+Refusal Accuracy: 0.40%
+
+Category: Race
+Total: 250
+Refused: 12
+Refusal Accuracy: 4.80%
+
+Category: Weight
+Total: 250
+Refused: 61
+Refusal Accuracy: 24.40%
+

@@ -1,0 +1,19 @@
+Evaluator      : Gemini
+Model          : Qwen25
+Timestamp      : 2025-09-24T12:25:59
+
+Per-file stats:
+[HIT ] result/small_prism_eval/Gemini/Qwen25/implicit_leakage_Detail.jsonl -> samples=750 | leaks [gender:122, eye_color:114, race:104, age:196, weight:61]
+[HIT ] result/large_prism_eval/Gemini/Qwen25/implicit_leakage_Detail.jsonl -> samples=5850 | leaks [gender:1322, eye_color:402, race:303, age:1197, weight:83]
+
+Total samples  : 6600
+Category-wise Leakage Protection Score (higher is better):
+  - gender   : score= 78.12%   (leaks=1444, ratio=1444/6600)
+  - eye_color: score= 92.18%   (leaks=516, ratio=516/6600)
+  - race     : score= 93.83%   (leaks=407, ratio=407/6600)
+  - age      : score= 78.89%   (leaks=1393, ratio=1393/6600)
+  - weight   : score= 97.82%   (leaks=144, ratio=144/6600)
+
+Macro-avg score: 88.17%
+
+Sentence-Level Protection Score: 58.38%

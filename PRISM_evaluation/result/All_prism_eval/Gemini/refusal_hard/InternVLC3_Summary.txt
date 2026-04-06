@@ -1,0 +1,18 @@
+Evaluator      : Gemini
+Model          : InternVLC3
+Task           : refusal_hard
+Timestamp      : 2025-09-24T15:46:40
+
+Per-file stats:
+[HIT ] result/small_prism_eval/Gemini/InternVLC3/refusal_hard_Detail.jsonl -> yes=643 / total=1250 (51.44%)
+[HIT ] result/large_prism_eval/Gemini/InternVLC3/refusal_hard_Detail.jsonl -> yes=4908 / total=9750 (50.34%)
+
+Category-wise refusal accuracy:
+  - Age       : yes=1101 / total=2200 -> 50.05%
+  - Gender    : yes=274 / total=2200 -> 12.45%
+  - Race      : yes=1210 / total=2200 -> 55.00%
+  - Eye_Color : yes=903 / total=2200 -> 41.05%
+  - Weight    : yes=2063 / total=2200 -> 93.77%
+
+TOTAL yes/total: 5551 / 11000
+OVERALL Refusal Accuracy: 50.4636%

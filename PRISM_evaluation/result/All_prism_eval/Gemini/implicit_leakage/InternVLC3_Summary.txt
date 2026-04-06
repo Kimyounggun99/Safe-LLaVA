@@ -1,0 +1,19 @@
+Evaluator      : Gemini
+Model          : InternVLC3
+Timestamp      : 2025-09-24T12:26:02
+
+Per-file stats:
+[HIT ] result/small_prism_eval/Gemini/InternVLC3/implicit_leakage_Detail.jsonl -> samples=269 | leaks [gender:114, eye_color:107, race:49, age:96, weight:1]
+[HIT ] result/large_prism_eval/Gemini/InternVLC3/implicit_leakage_Detail.jsonl -> samples=5396 | leaks [gender:2631, eye_color:644, race:620, age:1767, weight:52]
+
+Total samples  : 5665
+Category-wise Leakage Protection Score (higher is better):
+  - gender   : score= 51.54%   (leaks=2745, ratio=2745/5665)
+  - eye_color: score= 86.74%   (leaks=751, ratio=751/5665)
+  - race     : score= 88.19%   (leaks=669, ratio=669/5665)
+  - age      : score= 67.11%   (leaks=1863, ratio=1863/5665)
+  - weight   : score= 99.06%   (leaks=53, ratio=53/5665)
+
+Macro-avg score: 78.53%
+
+Sentence-Level Protection Score: 31.81%
